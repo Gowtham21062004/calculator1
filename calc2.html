@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <body style="border: 5px solid green; background-color: aqua;">  
+    <div class="he">
+        <h1>CALCULATOR</h1>
+    </div>
+    <div class="cal">
+    <input type="number" id="num1" placeholder="Enter number"></div>
+    <br><br>
+    <div class="cal2">
+    <input type="number" id="num2" placeholder="Enter number"></div>
+    <br><br>
+    <div class="cal3">
+    <button onclick="vg()">ADDITION</button></div><br><br>
+    <div class="cal4">
+        <button onclick="go()">SUBTRACTION</button></div><br><br>
+    <div class="cal5">
+        <button onclick="wt()">MULTIPLICATION</button></div><br><br>
+    <div class="cal6">
+        <button onclick="th()">DIVISION</button></div><br><br>
+        <p class="as" id="add"></p>
+        <p class="df" id="sub"></p>
+        <p class="gh" id="multiply"></p>
+        <p  class="jk" id="div"></p>
+        <script>
+            function vg(){
+            var a=parseInt(document.getElementById('num1').value);
+            var b=parseInt(document.getElementById('num2').value);
+            var c=a+b;
+            document.getElementById('add').innerHTML="ADDITION = " + c;
+            }
+            function go(){
+            var a=parseInt(document.getElementById('num1').value);
+            var b=parseInt(document.getElementById('num2').value);
+            var d=a-b;
+            document.getElementById('sub').innerHTML="SUBTRACTION = " + d;  
+            }
+            function wt(){
+            var a=parseInt(document.getElementById('num1').value);
+            var b=parseInt(document.getElementById('num2').value);
+            var e=a*b;
+            document.getElementById('multiply').innerHTML="MULTIPLICATION = " + e;
+            }
+            function th(){
+            var a=parseInt(document.getElementById('num1').value);
+            var b=parseInt(document.getElementById('num2').value);
+            var f=a/b;
+            document.getElementById('div').innerHTML="DIVISION = " + f;  
+            }
+        </script>
+        <style>
+            input[type=number]{
+            border: 3px solid black;
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color:burlywood; 
+            }
+            button{
+            border: 3px solid green;
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color:coral;
+            color:black
+            
+        }
+        .cal{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cal2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cal3{
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+        }
+        .cal4{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cal5{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cal6{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .as{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            color:chartreuse;
+            font-size: x-large;
+        }
+        .df{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            color:darkgreen;
+            font-size: x-large;
+        }
+        .gh{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            color:blue;
+            font-size: x-large;
+        }
+        .jk{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            color:black;
+            font-size: x-large;
+        }
+        .he{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:red;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+
+        </style>
+</body>
+</html>
